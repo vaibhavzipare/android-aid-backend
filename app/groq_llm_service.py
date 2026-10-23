@@ -16,7 +16,7 @@ class GroqLLMService:
 
     def __init__(self, api_key: str, model: str):
         self.client = Groq(api_key=api_key)
-        self.model = model
+        self.model = "llama-3.3-70b-versatile"
 
     def analyze(
         self,
